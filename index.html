@@ -11,22 +11,93 @@
         <div class="h-100 w-100 bg-dark text-light d-flex justify-content-center">
             <div class="container">
                 <div class="row">
-                    <div class="col mb-4">
+                    <div class="col col-9 mb-4 justify-content-center">
                         <h1 class="display-2 text-light text-center">Wellington Live</h1>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col col-8">
-                        <img src="images/mainImage.jpg" alt="Rock band playing live">
+                    <div class="col col-9">
+                        <img src="images/mainImage.jpg" id="mainImage" alt="Rock band playing live">
                     </div>
                 </div>
-                
+                <div class="row mt-4 justify-content-center">
+                    <div class="col col-9 bg-light p-4 d-flex justify-content-between" id="listBox">
+
+                        <div class="col col-3 float-left">
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                See Venues
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Venue 1</a>
+                                <a class="dropdown-item" href="#">Venue 2</a>
+                                <a class="dropdown-item" href="#">Venue 3</a>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-3 float-left">
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                See Genres
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Genre 1</a>
+                                <a class="dropdown-item" href="#">Genre 2</a>
+                                <a class="dropdown-item" href="#">Genre 3</a>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-3 float-left">
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                See Bands
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Band 1</a>
+                                <a class="dropdown-item" href="#">Band 2</a>
+                                <a class="dropdown-item" href="#">Band 3</a>
+                              </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <!--  MODAL POP-UP CARDS -->
+                     <!-- <div id="bandPopUp" class="overlay">
+                       <div class="overlayContent">
+                         <div id="close">
+                           <i class="fas fa-times fa-2x"></i>
+                         </div>
+                         <div class="row h-100">
+                           <div class="col-4 h-100">
+                             <img id="posterImage" src="" alt="" class="img-fluid">
+                           </div>
+
+                           <div class="col-8">
+                             <h2 id="bandName" class="display-4"></h2>
+                             <p id="venue"></p>
+                             <p id="bandBio" class="overflow-auto"></p>
+                             <p>Price: <span id="price"></span></p>
+                             <div id="musicGenre">
+                             </div>
+
+                           </div>
+                         </div>
+                       </div>
+                     </div> -->
 
             </div>
         </div>
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script type="text/javascript" src="jquery/jquery-3.4.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/script.js"></script>

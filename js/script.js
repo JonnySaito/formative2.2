@@ -1,100 +1,112 @@
-console.log("js is loading");
+// console.log("js is loading");
 
 var bandList = [
     {
     id: 1,
-    name: 'Nearvana',
+    bandname: 'Nearvana',
     photo: 'nearvana.jpg',
     genre: ['rock', 'punk', 'alternative'],
     venue: 'San Fran',
-    price: '$35'
+    price: '$35',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 2,
-    name: 'Proxy Music',
+    bandname: 'Proxy Music',
     photo: 'proxyMusic.jpg',
     genre: ['rock', 'glam'],
     venue: 'Pyramid Club',
-    price: '$40'
+    price: '$40',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 3,
-    name: 'Lez Zeppelin',
+    bandname: 'Lez Zeppelin',
     photo: 'lezZeppelin.jpg',
     genre: ['hard rock', 'rock'],
     venue: 'Valhalla',
-    price: '$42'
+    price: '$42',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 4,
-    name: 'Oasish',
+    bandname: 'Oasish',
     photo: 'oasish.jpg',
     genre: ['rock'],
     venue: 'Michael Fowler Center',
-    price: '$65'
+    price: '$65',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 5,
-    name: 'Bjorn Again',
+    bandname: 'Bjorn Again',
     photo: 'bjornAgain.jpg',
     genre: ['pop'],
     venue: 'Michael Fowler Centre',
-    price: '$80'
+    price: '$80',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 6,
-    name: 'Motorheadache',
+    bandname: 'Motorheadache',
     photo: 'motorheadache.jpg',
     genre: ['hard rock', 'metal', 'rock'],
     venue: 'Valhalla',
-    price: '$45'
+    price: '$45',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 7,
-    name: 'The Jimi Hendrix Experience Experience',
+    bandname: 'The Jimi Hendrix Experience Experience',
     photo: 'jimiHendrix.jpg',
     genre: ['rock', 'hard rock'],
     venue: 'TSB Arena',
-    price: '$50'
+    price: '$50',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 8,
-    name: 'Faux Fighters',
+    bandname: 'Faux Fighters',
     photo: 'fauxFighters.jpg',
     genre: ['rock', 'punk', 'alternative'],
     venue: 'Valhalla',
-    price: '$55'
+    price: '$55',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 9,
-    name: 'Chicks with Dixies',
+    bandname: 'Chicks with Dixies',
     photo: 'chicksDixies.jpg',
     genre: ['pop', 'alternative'],
     venue: 'San Fran',
-    price: '$25'
+    price: '$25',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 10,
-    name: 'Ringo Deathstarr',
+    bandname: 'Ringo Deathstarr',
     photo: 'ringoDeathStarr.jpg',
     genre: ['rock', 'alternative'],
     venue: 'Pyramid Club',
-    price: '$35'
+    price: '$35',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 11,
-    name: 'Harmonica Lewinski',
+    bandname: 'Harmonica Lewinski',
     photo: 'harmonicaLewinski.jpg',
     genre: ['pop', 'alternative'],
     venue: 'Moon',
-    price: '$20'
+    price: '$20',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
     id: 12,
-    name: 'The Gaza Strippers',
+    bandname: 'The Gaza Strippers',
     photo: 'gazaStripppers.jpg',
     genre: ['rock', 'punk', 'alternative'],
     venue: 'San Fran',
-    price: '$30'
+    price: '$30',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }
 ];
