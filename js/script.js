@@ -115,19 +115,38 @@ var venueList = [];
 var genreList = [];
 var gigList = [];
 
-// $( "#mfCentreVenue" ).click(function() {
-//    for (var i = 0; i < showList.length; i++) {
-//      if(showList[i].venue === 'Michael Fowler Centre'){
-//        gigList += showList[i].bandname;
-//        console.log("MFC is hosting " + gigList);
-//
-//      }
-//
-//      console.log(showList[i].venue);
-//    }
-//
-// });
+$( ".venueClass" ).click(function() {
+   for (var i = 0; i < showList.length; i++) {
+     if(showList[i].venue === 'Michael Fowler Centre'){
+       gigList += showList[i].bandname;
+       console.log("MFC is hosting " + gigList);
 
+     }
+
+     // console.log(showList[i].venue);
+   }
+
+});
+function modalFunction() {
+  document.getElementById('mymodal').style.display = 'block';
+
+  // ADD SELECTED CARDS HERE
+  for (var i = 0; i < showList.length; i++) {
+
+     if(showList[i].venue === 'Michael Fowler Centre'){
+        $('#cardContainer').html += '<div class="card" style="width: 18rem;">';
+        $('#cardContainer').html +=' <img class="card-img-top" src="images/' + showList[i].photo + '" alt="Card image cap">';
+        $('#cardContainer').html += '<div class="card-body">';
+        $('#cardContainer').html += '<h5 class="card-title">' + showList[i].bandname + '</h5>';
+        $('#cardContainer').html += '<p class="card-text">' + showList[i].genre + '</p></div> </div>';
+        }
+      }
+
+}
+
+function closeFunction(){
+  $('#mymodal').style.display="none";
+}
 // function showMoreShow(showNumber){
 //   var singleShow;
 //     for (var i = 0; i < showList.length; i++) {

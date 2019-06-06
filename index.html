@@ -29,15 +29,38 @@
                                 Search by Venue
                               </a>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" id="mfCentreVenue" href="#">Michael Fowler Centre</a>
-                                <a class="dropdown-item" id="tsbArenaVenue" href="#">TSB Arena</a>
-                                <a class="dropdown-item" id="sanFranVenue" href="#">San Fran</a>
-                                <a class="dropdown-item" id="valhallaVenue" href="#">Valhalla</a>
-                                <a class="dropdown-item" id="pyramidClubVenue" href="#">Pyramid Club</a>
-                                <a class="dropdown-item" id="moonVenue" href="#">Moon</a>
+                                <a class="dropdown-item venueClass" id="mfCentreVenue" onclick="modalFunction()" href="#">Michael Fowler Centre</a>
+                                <a class="dropdown-item venueClass" id="tsbArenaVenue" href="#">TSB Arena</a>
+                                <a class="dropdown-item venueClass" id="sanFranVenue" href="#">San Fran</a>
+                                <a class="dropdown-item venueClass" id="valhallaVenue" href="#">Valhalla</a>
+                                <a class="dropdown-item venueClass" id="pyramidClubVenue" href="#">Pyramid Club</a>
+                                <a class="dropdown-item venueClass" id="moonVenue" href="#">Moon</a>
                               </div>
                             </div>
                         </div>
+
+
+
+
+                        <!-- <div class="modal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
 
                         <div class="col col-3 float-left">
                             <div class="dropdown">
@@ -59,7 +82,7 @@
                         <div class="col col-3 float-left">
                             <div class="dropdown">
                               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Search for Bands
+                                Search Bands
                               </a>
 
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -82,6 +105,8 @@
 
 
                     </div>
+
+
 
                 </div>
 
@@ -108,7 +133,16 @@
                          </div>
                        </div>
                      </div> -->
+                     <div class="row" id="mymodal">
+                       <div class="myClose">
+                          <button type="button" id="close" onclick="closeFunction()">X</button>
+                       </div>
 
+                       <p> CARDS GO HERE </p>
+                       <div id="cardContainer">
+
+                       </div>
+                     </div>
             </div>
         </div>
 
