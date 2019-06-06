@@ -4,11 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Formative 2.2</title>
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="bg-dark">
-        <div class="h-100 w-100 bg-dark text-light d-flex justify-content-center">
+        <div class="h-100 w-100 bg-dark text-light d-flex justify-content-center" id="pageContainer">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col col-9 mb-4">
@@ -29,17 +30,15 @@
                                 Search by Venue
                               </a>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item venueClass" id="mfCentreVenue" onclick="modalFunction()" href="#">Michael Fowler Centre</a>
-                                <a class="dropdown-item venueClass" id="tsbArenaVenue" href="#">TSB Arena</a>
-                                <a class="dropdown-item venueClass" id="sanFranVenue" href="#">San Fran</a>
-                                <a class="dropdown-item venueClass" id="valhallaVenue" href="#">Valhalla</a>
-                                <a class="dropdown-item venueClass" id="pyramidClubVenue" href="#">Pyramid Club</a>
-                                <a class="dropdown-item venueClass" id="moonVenue" href="#">Moon</a>
+                                <a class="dropdown-item venueClass" id="mfCentreVenue" onclick="venueModalFunction()" href="#">Michael Fowler Centre</a>
+                                <a class="dropdown-item venueClass" id="tsbArenaVenue" onclick="venueModalFunction()" href="#">TSB Arena</a>
+                                <a class="dropdown-item venueClass" id="sanFranVenue" onclick="venueModalFunction()" href="#">San Fran</a>
+                                <a class="dropdown-item venueClass" id="valhallaVenue" onclick="venueModalFunction()" href="#">Valhalla</a>
+                                <a class="dropdown-item venueClass" id="pyramidClubVenue" onclick="venueModalFunction()" href="#">Pyramid Club</a>
+                                <a class="dropdown-item venueClass" id="moonVenue" onclick="venueModalFunction()" href="#">Moon</a>
                               </div>
                             </div>
                         </div>
-
-
 
 
                         <!-- <div class="modal" tabindex="-1" role="dialog">
@@ -68,13 +67,13 @@
                                 Search by Genre
                               </a>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Rock</a>
-                                <a class="dropdown-item" href="#">Pop</a>
-                                <a class="dropdown-item" href="#">Hard rock</a>
-                                <a class="dropdown-item" href="#">Punk</a>
-                                <a class="dropdown-item" href="#">Metal</a>
-                                <a class="dropdown-item" href="#">Alternative</a>
-                                <a class="dropdown-item" href="#">Glam</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Rock</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Pop</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Hard rock</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Punk</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Metal</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Alternative</a>
+                                <a class="dropdown-item" onclick="genreModalFunction()" href="#">Glam</a>
                               </div>
                             </div>
                         </div>
@@ -86,18 +85,18 @@
                               </a>
 
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Nearvana</a>
-                                <a class="dropdown-item" href="#">Proxy Music</a>
-                                <a class="dropdown-item" href="#">Lez Zeppelin</a>
-                                <a class="dropdown-item" href="#">Oasish</a>
-                                <a class="dropdown-item" href="#">Bjorn Again</a>
-                                <a class="dropdown-item" href="#">Motorheadache</a>
-                                <a class="dropdown-item" href="#">The Jimi Hendrix Experience Experience</a>
-                                <a class="dropdown-item" href="#">Faux Fighters</a>
-                                <a class="dropdown-item" href="#">Chicks with Dixies</a>
-                                <a class="dropdown-item" href="#">Ringo Deathstarr</a>
-                                <a class="dropdown-item" href="#">Harmonica Lewinski</a>
-                                <a class="dropdown-item" href="#">The Gaza Strippers</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Nearvana</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Proxy Music</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Lez Zeppelin</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Oasish</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Bjorn Again</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Motorheadache</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">The Jimi Hendrix Experience Experience</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Faux Fighters</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Chicks with Dixies</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Ringo Deathstarr</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">Harmonica Lewinski</a>
+                                <a class="dropdown-item" onclick="bandModalFunction()" href="#">The Gaza Strippers</a>
                               </div>
                             </div>
                         </div>
@@ -110,15 +109,15 @@
 
                 </div>
 
-                <!--  MODAL POP-UP CARDS -->
-                     <!-- <div id="bandPopUp" class="overlay">
+                 <!-- MODAL POP-UP CARDS -->
+                     <div id="bandPopUp" class="overlay">
                        <div class="overlayContent">
                          <div id="close">
                            <i class="fas fa-times fa-2x"></i>
                          </div>
                          <div class="row h-100">
                            <div class="col-4 h-100">
-                             <img id="photoImage" src="" alt="" class="img-fluid">
+                             <img id="photoImage" src="" alt="band photo" class="img-fluid">
                            </div>
 
                            <div class="col-8">
@@ -132,18 +131,17 @@
                            </div>
                          </div>
                        </div>
-                     </div> -->
-                     <div class="row" id="mymodal">
-                       <div class="myClose">
-                          <button type="button" id="close" onclick="closeFunction()">X</button>
-                       </div>
-
-                       <p> CARDS GO HERE </p>
-                       <div id="cardContainer">
-
-                       </div>
                      </div>
+
             </div>
+
+            <!-- HERE'S WHERE THE POP-UP CARDS WILL GO-->
+            <div id="displayList" class="row">
+            </div>
+
+
+
+
         </div>
 
 

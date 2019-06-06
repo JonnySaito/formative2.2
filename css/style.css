@@ -18,12 +18,15 @@ h1{
     border-radius: 20px;
 }
 
-#mymodal{
+#venueModal{
   display:none;
   background-color: lightblue;
   z-index:10;
 }
 
+#bandPopUp{
+    display: none;
+}
 
 
 /* .overlay{
