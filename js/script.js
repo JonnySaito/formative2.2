@@ -1,6 +1,6 @@
 // console.log("js is loading");
 
-var bandList = [
+var showList = [
     {
     id: 1,
     bandname: 'Nearvana',
@@ -33,8 +33,8 @@ var bandList = [
     bandname: 'Oasish',
     photo: 'oasish.jpg',
     genre: ['rock'],
-    venue: 'Michael Fowler Center',
-    price: '$65',
+    venue: 'TSB Arena',
+    price: '$110',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
@@ -43,7 +43,7 @@ var bandList = [
     photo: 'bjornAgain.jpg',
     genre: ['pop'],
     venue: 'Michael Fowler Centre',
-    price: '$80',
+    price: '$120',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
@@ -60,8 +60,8 @@ var bandList = [
     bandname: 'The Jimi Hendrix Experience Experience',
     photo: 'jimiHendrix.jpg',
     genre: ['rock', 'hard rock'],
-    venue: 'TSB Arena',
-    price: '$50',
+    venue: 'Michael Fowler Centre',
+    price: '$100',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
@@ -88,7 +88,7 @@ var bandList = [
     photo: 'ringoDeathStarr.jpg',
     genre: ['rock', 'alternative'],
     venue: 'Pyramid Club',
-    price: '$35',
+    price: '$45',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
@@ -97,7 +97,7 @@ var bandList = [
     photo: 'harmonicaLewinski.jpg',
     genre: ['pop', 'alternative'],
     venue: 'Moon',
-    price: '$20',
+    price: '$30',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
@@ -110,3 +110,62 @@ var bandList = [
     bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }
 ];
+
+var venueList = [];
+var genreList = [];
+var gigList = [];
+
+// $( "#mfCentreVenue" ).click(function() {
+//    for (var i = 0; i < showList.length; i++) {
+//      if(showList[i].venue === 'Michael Fowler Centre'){
+//        gigList += showList[i].bandname;
+//        console.log("MFC is hosting " + gigList);
+//
+//      }
+//
+//      console.log(showList[i].venue);
+//    }
+//
+// });
+
+// function showMoreShow(showNumber){
+//   var singleShow;
+//     for (var i = 0; i < showList.length; i++) {
+//         if (showList[i].id === showNumber) {
+//             singleShow = showList[i];
+//             break;
+//         }
+//     }
+//
+//         $('#photoImage').src = 'images/'+singleShow.photo;
+//         $('#bandName').text = singleShow.bandname;
+//         $('#showVenue').text = singleShow.venue;
+//         $('#bandBio').text = singleShow.bio;
+//         $('#ticketPrice').text = singleShow.price;
+//         $('#bandGenre').html = "";
+//
+//
+//         var badgeClass = '';
+//           for (var i = 0; i < singleShow.genre.length; i++) {
+//               var genreColour = getGenreColour(singleShow.genre[i]);
+//               if(singleShow.genre[i] === 'Rock'){
+//                 badgeClass = 'badge-primary';
+//             } else if(singleShow.genre[i] === 'Hard rock'){
+//                 badgeClass = 'badge-success';
+//             } else if(singleShow.genre[i] === 'Pop'){
+//                 badgeClass = 'badge-danger';
+//             } else if(singleShow.genre[i] === 'Alternative'){
+//                 badgeClass = 'badge-secondary';
+//             } else if(singleShow.genre[i] === 'Punk'){
+//                 badgeClass = 'badge-warning';
+//             } else if(singleShow.genre[i] === 'Metal'){
+//                 badgeClass = 'badge-info';
+//             } else if (singleShow.genre[i] === 'Glam'){
+//                 badgeClass = 'badge-dark';
+//             }
+//                 $('#bandGenre').html += '<span class= "badge badge-'+genreColour+' mr-1">' + singleShow.genre[i] + '</span>';
+//             };
+//
+//         $('#showPopUp').style.display = 'flex';
+//         document.body.style.overflow = 'hidden';
+// }
