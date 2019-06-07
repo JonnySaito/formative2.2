@@ -114,15 +114,46 @@ var shows = [
 // var gigList = [];
 
 // FUNCTION TO SHOW LIST OF SHOWS AT SELECTED VENUE; A MODAL POP-UP SHOWING CARD(S) FOR EACH LIVE SHOW AT THAT VENUE.
-var venueShows = [];
-function venueModalFunction(){
-    for (var i = 0; i < shows.length; i++) {
-        if(this.text === shows[i].venue){
-            venueShows += shows[i];
-        };
-    };
-    console.log(venueShows);
-};
+
+$('.dropdown-item').click(function(){
+    $('.modal').show();
+
+  var venue = document.getElementsByClassName('venueClass');
+  // console.log(venue[0].text);
+  for (var i = 0; i < venue.length; i++) {
+
+    for (var j = 0; j < shows.length; j++) {
+    //  console.log(venue[0].text);
+      //if ((venue[i].text == 'Michael Fowler Centre') && (venue[i].text == shows[j].venue)) {
+       if ((venue[i].text == shows[j].venue)) {
+        console.log(shows[j].bandname, shows[j].genre, shows[j].venue);
+
+
+      }
+      //  break;
+    }
+  }
+});
+
+$('.close').click(function(){
+  $('.modal').hide();
+});
+
+
+
+
+
+
+
+// var venueShows = [];
+// function venueModalFunction(){
+//     for (var i = 0; i < shows.length; i++) {
+//         if(this.text === shows[i].venue){
+//             venueShows += shows[i];
+//         };
+//     };
+//     console.log(venueShows);
+// };
 
 
 // $('.venueClass').click(function() {

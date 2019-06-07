@@ -28,6 +28,12 @@ h1{
     display: none;
 }
 
+.myModal{
+  width: 600px;
+  height: 600px;
+  background-color: lightgray;
+   
+}
 
 /* .overlay{
     position: fixed;
